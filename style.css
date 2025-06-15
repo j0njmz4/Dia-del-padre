@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    background: #b0cfd8;
+    overflow-x: hidden;
+}
+
+.pantalla {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Botón inicial con latido */
+button#empezarBtn {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #6080a8;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(96, 128, 168, 0.6);
+    animation: pulse 2s infinite;
+}
+
+button#empezarBtn:hover {
+    background-color: #253d8b;
+    box-shadow: 0 8px 16px rgba(37, 61, 139, 0.8);
+}
+
+/* Tarjeta para "Feliz día del padre" */
+.tarjeta {
+    background: #e3f0f7;
+    border-radius: 20px;
+    padding: 30px 40px;
+    max-width: 600px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+/* Botón fijo para música */
+#btnMusica {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #6080a8;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(96, 128, 168, 0.6);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    user-select: none;
+    z-index: 1000;
+}
+
+#btnMusica:hover {
+    background-color: #253d8b;
+    box-shadow: 0 8px 16px rgba(37, 61, 139, 0.8);
+}
+
+.mensaje-largo {
+    background: #e3f0f7;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 700px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.mensaje-largo h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.mensaje-largo p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.swiper {
+    width: 90%;
+    max-width: 400px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 6px 12px rgba(96, 128, 168, 0.6);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(96, 128, 168, 0.8);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+}
