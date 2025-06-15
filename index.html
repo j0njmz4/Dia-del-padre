@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Para mi padre</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- Pantalla 1: Botón de inicio -->
+    <section id="pantalla1" class="pantalla">
+        <button id="empezarBtn">- Haz click aquí papá -</button>
+    </section>
+
+    <!-- Pantalla 2: Tarjeta con mensaje animado -->
+    <section id="pantalla2" class="pantalla oculto">
+        <div id="tarjetaMensaje" class="tarjeta fade-in">
+            <h1 id="mensajeAnimado"></h1>
+        </div>
+    </section>
+
+    <!-- Pantalla 3: Mensaje largo + Carrusel -->
+    <section id="pantalla3" class="pantalla oculto fade-in">
+        <div class="mensaje-largo">
+            <h2>Para mi padre, mi más grande inspiración</h2>
+            <p>Antes que todo, te quiero.</p>
+            <p>
+                Desde que vine a Guadalajara he resentido el hecho de alejarme de ustedes y no he dejado de pensar
+                en que me pierdo de momentos en los cuales me gustaría estar, ya sean cumpleaños o días
+                como estos. El estar aquí me ha hecho apreciar todo ese tiempo tan valioso donde no me encuentro
+                en la cercanía suficiente como para darles un abrazo después de desayunar.
+            </p>
+            <p>
+                Pero estoy aquí con un propósito, el ser mejor persona, estudiante e hijo.
+                Aprovecho el esfuerzo tan grande que representa el que me apoyes a estudiar la carrera que yo quiero,
+                el que no tenga que preocuparme por el dinero y poder disfrutar mi vida universitaria al máximo.
+            </p>
+            <p>
+                Sin lugar a dudas, tengo un gran ejemplo a seguir y aunque intimidante el tamaño de esa sombra tan grande
+                que eres tú, estoy dispuesto a superarme como persona y hacer de mí alguien de quien te sientas orgulloso.
+                No soy ni una ínfima parte del grande hombre que tú eres, pero me queda camino que recorrer y si de algo estoy
+                seguro es que me gustaría seguir tus pasos.
+                Los pasos de un hombre fuerte, honesto y que no duda en hacerle saber a sus seres queridos que los quiere.
+            </p>
+            <p>
+                Por todo lo que has dado por mí, ya sean cosas de las que yo sé o la infinidad de cosas que podrías haberme 
+                reclamado pero guardas dentro porque te nace el cuidarnos, te agradezco. Sé que la figura de ti que permanece en mi mente 
+                me guiará por el camino correcto.
+            </p>
+            <p>
+                Te mando el abrazo más fuerte que se pueda y espero disfrutes mucho este día, ya dentro de poco nos veremos.
+            </p>
+        </div>
+
+        <!-- Carrusel de fotos -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/img1.jpg" alt="Foto 1" /></div>
+                <div class="swiper-slide"><img src="images/img2.jpg" alt="Foto 2" /></div>
+                <div class="swiper-slide"><img src="images/img3.jpg" alt="Foto 3" /></div>
+                <div class="swiper-slide"><img src="images/img4.jpg" alt="Foto 4" /></div>
+                <div class="swiper-slide"><img src="images/img5.jpg" alt="Foto 5" /></div>
+                <div class="swiper-slide"><img src="images/img6.jpg" alt="Foto 6" /></div>
+                <div class="swiper-slide"><img src="images/img7.jpg" alt="Foto 7" /></div>
+                <div class="swiper-slide"><img src="images/img8.jpg" alt="Foto 8" /></div>
+                <div class="swiper-slide"><img src="images/img9.jpg" alt="Foto 9" /></div>
+                <div class="swiper-slide"><img src="images/img10.jpg" alt="Foto 10" /></div>
+                <div class="swiper-slide"><img src="images/img11.jpg" alt="Foto 11" /></div>
+                <div class="swiper-slide"><img src="images/img12.jpg" alt="Foto 12" /></div>
+                <div class="swiper-slide"><img src="images/img13.jpg" alt="Foto 13" /></div>
+                <div class="swiper-slide"><img src="images/img14.jpg" alt="Foto 14" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón fijo para controlar mUsica -->
+    <button id="btnMusica" title="Reproducir/Pausar música">Reproducir música</button>
+
+    <audio id="musica" src="audio/audio1.mp3"></audio>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
